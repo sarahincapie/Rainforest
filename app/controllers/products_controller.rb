@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @review = Review.new
   end
 
   # GET /products/new
@@ -71,4 +72,8 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description)
     end
+
+
+
+
 end

@@ -10,14 +10,21 @@
   <%= @product.description %>
 </p>
 
+
+
+
 <h3> Reviews </h3>
 
-<% @products.review.each do |review| %>
+
+
+<%@product.reviews.each do |review| %>
+
 
 <p>
-	<% review.comment %>
+	<%= review.comment %>
 
 </p>
+
 
 <div>
 
@@ -26,6 +33,11 @@
 </div>
 
 <% end %>
+
+<h3> new reviews </h3> 
+
+
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

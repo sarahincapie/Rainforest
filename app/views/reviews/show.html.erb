@@ -7,8 +7,8 @@
 
 <p>
   <strong>Product:</strong>
-  <%= @review.product %>
+  <%= @review.product_id%>
 </p>
 
-<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Edit', @review %> |
 <%= link_to 'Back', reviews_path %>
